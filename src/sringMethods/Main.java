@@ -85,8 +85,14 @@ public class Main {
 
         System.out.println(string.substring(3));   /// returns String
         System.out.println(string.substring(3,9));            /// returns String
-        System.out.println(string.substring(3,-1));    ////Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -4
+//        System.out.println(string.substring(3,-1));    ////Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -4
         System.out.println(string.substring(0,0));   /// no output
 
+//        // Methods to update a string
+        System.out.println(string.replace("is","was"));   //thwas was demo
+        System.out.println(string.replaceFirst("is","was"));  //thwas is demo
+        System.out.println(string.replaceAll("is","was"));    //thwas was demo
+        System.out.println(string.replaceAll("is(.)","was")); //thwaswasdemo
+        System.out.println(string.replaceAll("is(.*)","was")); //thwas
     }
 }
